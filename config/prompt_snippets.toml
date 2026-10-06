@@ -1,0 +1,67 @@
+# Textos que o core/prompt_builder.py costura no bloco <briefing> (TECHSPEC §6).
+# "label" é o rótulo mostrado na interface; "text" é a linha que vai para o briefing.
+# Editável sem mexer no código: mude o texto, não as chaves.
+
+[languages."pt-BR"]
+label = "Português (Brasil)"
+text = "Idioma da resposta: português do Brasil."
+
+[languages."pt-PT"]
+label = "Português (Portugal)"
+text = "Idioma da resposta: português europeu, com a ortografia e o vocabulário de Portugal."
+
+[languages.en]
+label = "Inglês"
+text = "Idioma da resposta: inglês."
+
+[languages.es]
+label = "Espanhol"
+text = "Idioma da resposta: espanhol."
+
+[formats.resposta_direta]
+label = "Resposta direta"
+text = "Formato: resposta direta e curta, sem seções nem introdução; vá ao ponto."
+
+[formats.relatorio]
+label = "Relatório estruturado"
+text = "Formato: relatório estruturado com seções ## e conclusão curta."
+
+[formats.tabela]
+label = "Tabela comparativa"
+text = """\
+Formato: tabela comparativa em Markdown, com uma linha por item e colunas para os critérios relevantes; \
+abaixo da tabela, um parágrafo curto com a leitura dos dados."""
+
+[formats.bibliografia]
+label = "Bibliografia anotada"
+text = """\
+Formato: bibliografia anotada. Para cada obra ou documento, dê a referência completa e um parágrafo \
+sobre conteúdo, relevância e limitações."""
+
+[formats.dossie]
+label = "Dossiê tático"
+text = """\
+Formato: dossiê tático. Comece por um resumo executivo em bullets, depois os achados por tema, \
+e termine com os próximos passos práticos."""
+
+[priorities.primarias]
+label = "Fontes primárias/oficiais"
+text = "Prefira fontes primárias e oficiais; cite a fonte de cada afirmação."
+
+[priorities.foruns]
+label = "Relatos de fóruns"
+text = """\
+Inclua relatos de fóruns e comunidades quando ajudarem, mas identifique-os como relatos pessoais, \
+não como fonte oficial."""
+
+[priorities.divergencias]
+label = "Apontar divergências entre fontes"
+text = "Quando as fontes divergirem, diga explicitamente onde e por quê."
+
+[priorities.confianca]
+label = "Indicar nível de confiança"
+text = "Indique o nível de confiança (alto, médio, baixo) de cada afirmação central e o que o sustenta."
+
+[priorities.seguimento]
+label = "Terminar com perguntas de seguimento"
+text = "Termine com 3 a 5 perguntas de seguimento que aprofundariam a investigação."

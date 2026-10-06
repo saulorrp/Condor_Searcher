@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "condor-searcher"
+description = "Busca com a Perplexity Agent API e relatório em Markdown com fontes"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["version"]
+dependencies = [
+    "PySide6>=6.6",
+    "perplexityai>=0.14",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-qt>=4.4",
+    "ruff>=0.6",
+    # Só nos testes: valida que o front matter dos relatórios é YAML de verdade (F4).
+    "pyyaml>=6.0",
+]
+# Só para gerar o executável: python scripts/build_release.py
+build = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+condor = "condor.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "condor.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+src = ["src", "tests"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

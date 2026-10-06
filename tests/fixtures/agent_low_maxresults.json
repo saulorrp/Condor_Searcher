@@ -1,0 +1,117 @@
+{
+  "background": false,
+  "created_at": 1791283821,
+  "error": null,
+  "id": "resp_fbd8b8c4-ddf7-470f-bdec-eb4108271b0d",
+  "model": "openai/gpt-6-luna",
+  "object": "response",
+  "output": [
+    {
+      "queries": [
+        "Arquivo Histórico Ultramarino horário sala de leitura",
+        "Arquivo Histórico Ultramarino sala de leitura horário funcionamento"
+      ],
+      "results": [
+        {
+          "date": "2026-10-01",
+          "id": 1,
+          "last_updated": "2026-10-01",
+          "snippet": "Horário de funcionamento: De 2ª.\na 6ª.\nfeira, das 9:30 h. às 19.30 h.\nHorário de atendimento da Sala de Leitura: De 2ª.\na 6ª.\nfeira, das 13:15 h. às 19:15 h.",
+          "source": "web",
+          "title": "Arquivo Histórico Ultramarino - Arquivistica Histórica - UNL",
+          "url": "https://arquivisticahistorica.fcsh.unl.pt/index.php/arquivo-historico-ultramarino"
+        },
+        {
+          "date": "2015-08-12",
+          "id": 2,
+          "last_updated": "2026-10-05",
+          "snippet": "**Horário de funcionamento: ** de 2ª.\na 6ª.\nfeira, das 9:30 h. às 17.00 h.\n**Horário de atendimento da Sala de Leitura:** de 2.ª a 6.ª feira, das 10:00h às 16:30h.\n...\n**Encerramento do AHU durante o ano de 2026: ** o Arquivo estará encerrado nos feriados de 1 de janeiro, 3 de abril, 1 de maio, 4 e 10 de junho, 5 de outubro, 1, 8 e 25 de dezembro.",
+          "source": "web",
+          "title": "Contactos",
+          "url": "https://ahu.dglab.gov.pt/contactos/"
+        }
+      ],
+      "type": "search_results"
+    },
+    {
+      "content": [
+        {
+          "annotations": [],
+          "text": "A **Sala de Leitura do Arquivo Histórico Ultramarino** funciona de **segunda a sexta-feira, das 10h00 às 16h30**. [web:2]",
+          "type": "output_text"
+        }
+      ],
+      "id": "msg_9deaade2-5d77-46c6-90e0-b8c5bd0fe5a4",
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "previous_response_id": null,
+  "status": "completed",
+  "store": true,
+  "usage": {
+    "cost": {
+      "cache_creation_cost": 5e-05,
+      "cache_read_cost": 3e-05,
+      "currency": "USD",
+      "input_cost": 0.0,
+      "output_cost": 5e-05,
+      "tool_calls_cost": 0.001,
+      "total_cost": 0.00113,
+      "tool_calls_cost_details": {
+        "search_web": 0.001
+      }
+    },
+    "input_tokens": 3223,
+    "input_tokens_details": {
+      "cache_creation_input_tokens": 390,
+      "cache_read_input_tokens": 2827,
+      "cached_tokens": 2827
+    },
+    "output_tokens": 97,
+    "tool_calls_details": {
+      "search_web": {
+        "invocation": 1,
+        "cost_usd": 0.001
+      }
+    },
+    "total_tokens": 3320,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "completed_at": 1791283821,
+  "frequency_penalty": 0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "metadata": {},
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "prompt_cache_key": null,
+  "reasoning": null,
+  "safety_identifier": null,
+  "service_tier": "default",
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [
+    {
+      "type": "web_search",
+      "max_results": 3
+    },
+    {
+      "type": "fetch_url"
+    }
+  ],
+  "top_logprobs": 0,
+  "top_p": 1,
+  "truncation": "",
+  "user": null
+}

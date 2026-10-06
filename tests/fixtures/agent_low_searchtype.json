@@ -1,0 +1,234 @@
+{
+  "background": false,
+  "created_at": 1791283834,
+  "error": null,
+  "id": "resp_875cef88-9f8e-45fd-b9bc-9899832f6bc8",
+  "model": "openai/gpt-6-luna",
+  "object": "response",
+  "output": [
+    {
+      "queries": [
+        "Arquivo Histórico Ultramarino horário sala de leitura",
+        "Arquivo Histórico Ultramarino sala de leitura horário funcionamento"
+      ],
+      "results": [
+        {
+          "date": "2026-10-01",
+          "id": 1,
+          "last_updated": "2026-10-01",
+          "snippet": "Horário de funcionamento: De 2ª.\na 6ª.\nfeira, das 9:30 h. às 19.30 h.\nHorário de atendimento da Sala de Leitura: De 2ª.\na 6ª.\nfeira, das 13:15 h. às 19:15 h.\n...\nO acesso ao Arquivo Histórico Ultramarino é livre para todas as pessoas maiores de 18 anos.",
+          "source": "web",
+          "title": "Arquivo Histórico Ultramarino - Arquivistica Histórica - UNL",
+          "url": "https://arquivisticahistorica.fcsh.unl.pt/index.php/arquivo-historico-ultramarino"
+        },
+        {
+          "date": "2015-08-12",
+          "id": 2,
+          "last_updated": "2026-10-05",
+          "snippet": "**Horário de funcionamento: ** de 2ª.\na 6ª.\nfeira, das 9:30 h. às 17.00 h.\n**Horário de atendimento da Sala de Leitura:** de 2.ª a 6.ª feira, das 10:00h às 16:30h.\n...\n**Encerramento do AHU durante o ano de 2026: ** o Arquivo estará encerrado nos feriados de 1 de janeiro, 3 de abril, 1 de maio, 4 e 10 de junho, 5 de outubro, 1, 8 e 25 de dezembro.",
+          "source": "web",
+          "title": "Contactos",
+          "url": "https://ahu.dglab.gov.pt/contactos/"
+        },
+        {
+          "date": "2015-08-11",
+          "id": 3,
+          "last_updated": "2026-10-02",
+          "snippet": "O Arquivo Histórico Ultramarino é um serviço da Direção-Geral do Livro, Arquivos e Bibliotecas, aberto ao público, responsável por cerca de 16 km de documentação textual e de imagem, relativa aos portugueses e aos povos com quem se relacionaram, entre o final do séc.\nXVI e 1974-1975",
+          "source": "web",
+          "title": "DGLAB - Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/"
+        },
+        {
+          "date": "2016-09-27",
+          "id": 4,
+          "last_updated": "2026-09-23",
+          "snippet": "Tel. 10h00 – 17h00: Secretariado 210309101 Geral 210309100\nArquivo Histórico Ultramarino, Palácio da Ega, Calçada da Boa Hora, n.º 30, 1300-095 Lisboa",
+          "source": "web",
+          "title": "Visitas | Arquivo Histórico Ultramarino - DGLAB",
+          "url": "https://ahu.dglab.gov.pt/servicos/visitas/"
+        },
+        {
+          "date": null,
+          "id": 5,
+          "last_updated": "2026-07-07",
+          "snippet": "3 – O período de funcionamento no Arquivo Histórico Ultramarino (AHU), no Centro Português \nde Fotografia (CPF) e nos Arquivos Distritais (AD) deve enquadrar-se nos limites acima referidos para a TT, devendo ser propostos em conformidade ao Diretor-Geral, exceto no que se refere ao CPF aos sábados, domingos e feriados, devendo igualmente ser proposto o que for entendido por necessário.\n...\n3 - O período de atendimento no Arquivo Histórico Ultramarino (AHU), no Centro Português",
+          "source": "web",
+          "title": "REGULAMENTO DO HORÁRIO DE TRABALHO",
+          "url": "https://dglab.gov.pt/wp-content/uploads/2016/06/Regulamento-de-hor%C3%A1rio-de-trabalho.pdf"
+        },
+        {
+          "date": null,
+          "id": 6,
+          "last_updated": "2026-09-09",
+          "snippet": "Reunia-se diariamente, à exceção de domingos e dias santos, a partir das sete horas da manhã, no verão, e das oito, no inverno.\nAs segundas, terças e quartas-feiras eram reservadas aos negócios da Ásia e da África Oriental; as quintas e sextas-feiras, aos do Brasil; e os sábados, aos da África Ocidental e ilhas de Cabo Verde.\n...\nÉ facultada a consulta do documento original, à exceção daqueles muito danificados, os quais deverão ser exami- nados nas máquinas leitoras de microfilmes, existentes na sala de consulta.\nPara o estudioso compulsivo o horário de funcionamento parecerá demasiado reduzido.\nFunciona apenas no período vespertino das 13:30 às\n19:00 horas.\n...\nAo pesquisador estrangeiro é exigido o passaporte e uma fotografia para que seja feita uma carteirinha de usuário, a qual o habilitará a ter pleno acesso à documentação.",
+          "source": "web",
+          "title": "O UNIVERSO DO ARQUIVO HISTÓRICO ULTRAMARINO",
+          "url": "https://ojs.ifch.unicamp.br/index.php/rhs/article/download/99/93/20551"
+        },
+        {
+          "date": "2024-02-12",
+          "id": 7,
+          "last_updated": "2025-10-15",
+          "snippet": "**Servicios**: Sala de lectura con capacidad para 14 personas por día.\n...\n## Arquivo Histórico Ultramarino\n...\n51\n**Dirección**: Calçada da Boa-Hora 30, 1300-095 Lisboa **Teléfonos**: + 351 210 30 91 **Horarios**: De lunes a viernes de 9:30 hasta las 18:30.\n**Sitio web**: https://ahu.dglab.gov.pt/\n52\n**Condiciones de ingreso**: Es necesario pedir con antelación los documentos que se desean ver en el archivo a través del siguiente enlace: http://digitarq.ahu.arquivos.pt/oservices.\nSe permite un máximo de 10 documentos por día.",
+          "source": "web",
+          "title": "Guía de la investigación americanista en Lisboa",
+          "url": "https://journals.openedition.org/nuevomundo/95570"
+        },
+        {
+          "date": "2020-10-28",
+          "id": 8,
+          "last_updated": "2025-11-09",
+          "snippet": "O Arquivo Militar Ultramarino está aberto ao público e guarda 16 km de documentação relativa aos portugueses e aos povos com quem se relacionaram, entre o final do século XVI e década de 70 do século passado.\n### Detalhes\n- Endereço\n- Calçada da Boa-Hora, 30\n- Lisboa\n- 1300-095\n- Horário\n- Seg-Sex 09.30-19.30",
+          "source": "web",
+          "title": "Arquivo Histórico Ultramarino | Atracções | Alcântara, Lisboa",
+          "url": "https://www.timeout.pt/lisboa/pt/atraccoes/arquivo-historico-ultramarino"
+        },
+        {
+          "date": null,
+          "id": 9,
+          "last_updated": "2025-11-06",
+          "snippet": "b) Arquivo Histórico Ultramarino, sito na Calçada da Boa Hora, 30 – 1300-095 Lisboa; ",
+          "source": "web",
+          "title": "CONTRATO N.º 5/2022 Assistência técnica/manutenção ...",
+          "url": "https://www.base.gov.pt/Base4/pt/resultados/?type=doc_documentos&id=1797420&ext=.pdf"
+        },
+        {
+          "date": null,
+          "id": 10,
+          "last_updated": "2025-04-10",
+          "snippet": "Álbuns fotográficos: acessíveis por leitura directa na sala de leitura \n(ver catalogo pág seguinte).\nNão há ficheiros digitais.",
+          "source": "web",
+          "title": "Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/wp-content/uploads/sites/24/2022/12/PT-AHU-FOT.pdf"
+        },
+        {
+          "date": null,
+          "id": 11,
+          "last_updated": "2026-05-30",
+          "snippet": "Número IPA Antigo: PT031106020065\n...\nResidencial senhorial\n...\nDescrição",
+          "source": "web",
+          "title": "Palácio da Ega / Arquivo Histórico Ultramarino - Monumentos.pt",
+          "url": "http://www.monumentos.gov.pt/site/app_pagesuser/sipa.aspx?id=6536"
+        },
+        {
+          "date": null,
+          "id": 12,
+          "last_updated": "2025-04-13",
+          "snippet": "1.2 Serviços presenciais do Arquivo: \n1.2.1 Os diferentes Arquivos DGLAB podem apresentar variações no que respeita aos \nhorários praticados para o atendimento presencial.\nOs respetivos horários constam do anexo I e serão disponibilizados nos respetivos sítios web.\n...\n2.1 Condições de acesso \n...\nA requisição de documentos é efetuada nos serviços em linha, por via eletrónica \nno sistema CRAV+ (https://crav.arquivos.pt/help), com o apoio dos serviços, caso necessário.\n...\na) Existe um limite de espécies documentais diárias é definida por cada Arquivo e \nconsta no anexo I.\n...\nInformação sobre o Serviço de Leitura \n4.1 Os Arquivos disponibilizam uma sala de leitura de originais e documentação em\nsuporte digital.\n4.2 A documentação requisitada será entregue aos leitores nos seus lugares, conforme \no tempo necessário para a sua recuperação e que varia conforme o arquivo, como consta no anexo I.\n4.3 Todos os leitores devem cumprir as regras de manuseamento dos documentos, \n...\nArquivo Histórico \nUltramarino",
+          "source": "web",
+          "title": "Microsoft Word - Regulamento Servicos DGLAB_Jun22.docx",
+          "url": "https://adevr.dglab.gov.pt/wp-content/uploads/sites/4/2022/08/Regulamento-Servicos-DGLAB_Jun22.pdf"
+        },
+        {
+          "date": "2016-01-01",
+          "id": 13,
+          "last_updated": "2025-09-13",
+          "snippet": "O Arquivo Histórico Ultramarino tem desenvolvido, em ritmo plausí-vel, sobretudo a partir de 1976, activi-dades que recaiem dentro do âmbito dos seus objectivos e que são: rece-ber, inventariar e catalogar a sua documentação; promover acções de ca-rácter cultural, como exposições car-tográficas, iconográficas e documen-tais; facultar documentos para con-sulta na Sala de Leitura e promover a sua reprodução por meio de microfil-magem, fotocópia e fotografia.",
+          "source": "web",
+          "title": "o arquivo histórico ultramarino fonte importante para a ...",
+          "url": "https://www.icm.gov.mo/rc/viewer/32000/2072"
+        },
+        {
+          "date": null,
+          "id": 14,
+          "last_updated": "2026-07-14",
+          "snippet": "também este catálogo ao público, quer na sua Sala de Leitura quer em linha no endereço seguinte: http://actd.iict.pt/community/actd:AHUF\n...\nO acesso aos documentos continua a ser possível apenas na Sala de Leitura deste Arquivo.\nArquivo Histórico Ultramarino \nCalçada da Boa-Hora, 30 \n1300-095 Lisboa, Portugal \ntelf. +351 213 616 330 \nfax +351 213 613 339 \nwww.iict.pt",
+          "source": "web",
+          "title": "catálogo de documentos manuscritos avulsos referentes à ...",
+          "url": "https://ahu.dglab.gov.pt/wp-content/uploads/sites/24/2017/12/146-Madeira.pdf"
+        },
+        {
+          "date": null,
+          "id": 15,
+          "last_updated": "2026-01-01",
+          "snippet": "AHU reúne o conjunto da documentação produzida pelos corpos centrais de admi­ nistração do império português constituídos desde meados do séc.",
+          "source": "web",
+          "title": "[PDF] arquivo histórico ultramarino - Portal de Revistas da USP",
+          "url": "https://revistas.usp.br/viaatlantica/article/download/232619/220021/802679"
+        }
+      ],
+      "type": "search_results"
+    },
+    {
+      "content": [
+        {
+          "annotations": [],
+          "text": "A **Sala de Leitura do Arquivo Histórico Ultramarino** funciona de **segunda a sexta-feira, das 10h00 às 16h30**. [web:2]",
+          "type": "output_text"
+        }
+      ],
+      "id": "msg_4accfad9-5994-4929-b8bb-a77f64cd712a",
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "previous_response_id": null,
+  "status": "completed",
+  "store": true,
+  "usage": {
+    "cost": {
+      "cache_creation_cost": 0.00029,
+      "cache_read_cost": 3e-05,
+      "currency": "USD",
+      "input_cost": 0.0,
+      "output_cost": 5e-05,
+      "tool_calls_cost": 0.0025,
+      "total_cost": 0.00287,
+      "tool_calls_cost_details": {
+        "search_web": 0.0025
+      }
+    },
+    "input_tokens": 5176,
+    "input_tokens_details": {
+      "cache_creation_input_tokens": 2310,
+      "cache_read_input_tokens": 2860,
+      "cached_tokens": 2860
+    },
+    "output_tokens": 98,
+    "tool_calls_details": {
+      "search_web": {
+        "invocation": 1,
+        "cost_usd": 0.0025
+      }
+    },
+    "total_tokens": 5274,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "completed_at": 1791283834,
+  "frequency_penalty": 0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "metadata": {},
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "prompt_cache_key": null,
+  "reasoning": null,
+  "safety_identifier": null,
+  "service_tier": "default",
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [
+    {
+      "search_type": "web",
+      "type": "web_search"
+    },
+    {
+      "type": "fetch_url"
+    }
+  ],
+  "top_logprobs": 0,
+  "top_p": 1,
+  "truncation": "",
+  "user": null
+}

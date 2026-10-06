@@ -1,0 +1,184 @@
+{
+  "background": false,
+  "created_at": 1791283790,
+  "error": null,
+  "id": "resp_6d907f08-6216-4da4-b265-6055258a8b88",
+  "model": "openai/gpt-6-luna",
+  "object": "response",
+  "output": [
+    {
+      "queries": [
+        "Qual é a capital de Portugal?"
+      ],
+      "results": [
+        {
+          "date": "2003-06-20",
+          "id": 1,
+          "last_updated": "2026-07-28",
+          "snippet": "**Lisboa** é a capital e maior cidade de Portugal, com uma população estimada de 548 703 habitantes em 2022 dentro dos seus limites administrativos numa área de cerca de 100 quilómetros quadrados.",
+          "source": "web",
+          "title": "Lisboa – Wikipédia, a enciclopédia livre",
+          "url": "https://pt.wikipedia.org/wiki/Lisboa?trk=article-ssr-frontend-pulse_little-text-block"
+        },
+        {
+          "date": "2025-05-12",
+          "id": 2,
+          "last_updated": "2026-10-04",
+          "snippet": "**Lisboa**\nCapital do País\n**10 555 milhares**",
+          "source": "web",
+          "title": "Sobre Portugal",
+          "url": "https://portugal.gov.pt/pt/gc24/portugal/sobre-portugal"
+        },
+        {
+          "date": "2025-05-12",
+          "id": 3,
+          "last_updated": "2026-10-03",
+          "snippet": "**Lisboa**\nCapital do País\n**10 555 milhares**",
+          "source": "web",
+          "title": "Sobre Portugal - XXIII Governo Constitucional",
+          "url": "https://portugal.gov.pt/gc23/portugal/sobre-portugal"
+        },
+        {
+          "date": "2024-01-29",
+          "id": 4,
+          "last_updated": "2026-02-21",
+          "snippet": "**Sua capital** ** é Lisboa**, também a sua cidade mais populosa.",
+          "source": "web",
+          "title": "Portugal: dados, mapa, geografia, história - Brasil Escola",
+          "url": "https://brasilescola.uol.com.br/geografia/portugal.htm"
+        },
+        {
+          "date": "2025-06-04",
+          "id": 5,
+          "last_updated": "2026-10-02",
+          "snippet": "Nem Lisboa, nem Porto.\nA capital oficial de Portugal, assim reconhecida em termos documentais, ainda é Coimbra.\nsaiba porquê.\n...\nOficialmente, a capital do nosso país continua a ser Coimbra.\n...\nMas a verdade é que nunca, até aos dias de hoje, foi oficializado em qualquer documento a transferência do título de capital de Coimbra para Lisboa.\nOficialmente, Coimbra continua a ser a capital de Portugal.",
+          "source": "web",
+          "title": "Sabia que Coimbra é oficialmente a capital de Portugal?",
+          "url": "https://www.e-konomista.pt/coimbra-capital-roteiro/"
+        },
+        {
+          "date": "2025-05-12",
+          "id": 6,
+          "last_updated": "2026-07-09",
+          "snippet": "**Lisboa**\nCapital do País\n**10 555 milhares**",
+          "source": "web",
+          "title": "Sobre Portugal - XXII Governo Constitucional",
+          "url": "https://portugal.gov.pt/gc22/portugal/sobre-portugal"
+        },
+        {
+          "date": null,
+          "id": 7,
+          "last_updated": "2026-09-21",
+          "snippet": "Nenhum documento oficial institui Lisboa como capital de Portugal.\nAo longo dos seus quase 900 anos de existência, Portugal teve várias capitais, todas elas ligadas ao facto de o rei e a sua corte aí viverem.\n...\nLisboa, passa, assim, a ser, até aos nossos dias, capital de Portugal, sem nunca ter havido necessidade de a declarar oficialmente como tal.\nNo entanto, em termos históricos, esse papel continua a pertencer a Coimbra, já que a declaração de D.\nAfonso Henriques nunca foi extinta.\n...\nSendo assim, quando, durante as invasões francesas, a corte se deslocou para o Rio de Janeiro, essa urbe assumiu o papel de capital de Portugal.\n...\nRecapitulando, podemos afirmar que Portugal (incluindo o Condado Portucalense) teve, ao longo da sua história, cinco capitais: Guimarães, Coimbra, Lisboa, Rio de Janeiro e Angra do Heroísmo.",
+          "source": "web",
+          "title": "Por que razão Lisboa é a capital de Portugal?",
+          "url": "https://www.leme.pt/magazine/o-saber-nao-ocupa-lugar/lisboa-capital-de-portugal.html"
+        },
+        {
+          "date": "2024-10-21",
+          "id": 8,
+          "last_updated": "2026-10-05",
+          "snippet": "Lisboa, a capital de Portugal, é também a cidade mais conhecida do país e uma das preferidas pelos imigrantes que vão morar e dos turistas.",
+          "source": "web",
+          "title": "Principais cidades de Portugal: veja as qualidades de cada uma",
+          "url": "https://www.eurodicas.com.br/principais-cidades-de-portugal/"
+        },
+        {
+          "date": "2016-01-19",
+          "id": 9,
+          "last_updated": "2025-06-12",
+          "snippet": "A capital de Portugal é Lisboa, a maior cidade do país e a mais movimentada.\n...\nIts capital is Lisbon, which is the largest city in the country.",
+          "source": "web",
+          "title": "Portugal – Português para principiantes",
+          "url": "https://wisc.pb.unizin.org/portuguese/chapter/portugal/"
+        },
+        {
+          "date": "2020-01-07",
+          "id": 10,
+          "last_updated": "2026-10-04",
+          "snippet": "## Lisboa, a capital de Portugal\nLisboa é a capital de Portugal e a maior cidade do país.\n...\nMas Lisboa não é a capital oficial do país!\n...\nVocê sabia que oficialmente Lisboa não é a capital de Portugal?\nIsso mesmo.\nApesar de todos conhecermos Lisboa como a capital do país, ela não é oficialmente a capital portuguesa.\n...\nPorém, como a mudança nunca foi oficializada, Coimbra continua sendo a capital de Portugal.",
+          "source": "web",
+          "title": "Capital de Portugal: descubra tudo sobre a capital lusitana",
+          "url": "https://www.eurodicas.com.br/capital-de-portugal/"
+        }
+      ],
+      "type": "search_results"
+    },
+    {
+      "content": [
+        {
+          "annotations": [],
+          "text": "A capital de Portugal é Lisboa.[2]",
+          "type": "output_text"
+        }
+      ],
+      "id": "msg_d7773d5d-6722-4434-aa00-23218590c86d",
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "previous_response_id": null,
+  "status": "completed",
+  "store": true,
+  "usage": {
+    "cost": {
+      "cache_creation_cost": 0.00036,
+      "cache_read_cost": null,
+      "currency": "USD",
+      "input_cost": 0.0,
+      "output_cost": 1e-05,
+      "tool_calls_cost": 0.001,
+      "total_cost": 0.00137,
+      "tool_calls_cost_details": {
+        "search_web": 0.001
+      }
+    },
+    "input_tokens": 2880,
+    "input_tokens_details": {
+      "cache_creation_input_tokens": 2877,
+      "cache_read_input_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 13,
+    "tool_calls_details": {
+      "search_web": {
+        "invocation": 1,
+        "cost_usd": 0.001
+      }
+    },
+    "total_tokens": 2893,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "completed_at": 1791283790,
+  "frequency_penalty": 0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "metadata": {},
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "prompt_cache_key": null,
+  "reasoning": null,
+  "safety_identifier": null,
+  "service_tier": "fast",
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [
+    {
+      "type": "web_search"
+    }
+  ],
+  "top_logprobs": 0,
+  "top_p": 1,
+  "truncation": "",
+  "user": null
+}

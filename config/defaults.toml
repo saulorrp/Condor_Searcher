@@ -1,0 +1,45 @@
+# Defaults do Condor Searcher. Edite à mão; o app lê este arquivo ao iniciar.
+# Os valores aqui são o estado inicial do painel "Opções" (TECHSPEC RF4) e o
+# botão "Restaurar padrões" volta exatamente para eles.
+
+[output]
+# Pasta onde ficam os .md, .json e o condor.db. "~" é expandido.
+folder = "~/Documents/CondorSearcher"
+
+[timeouts]
+# Segundos de timeout do SDK por preset. Presets mais profundos demoram muito mais.
+fast = 60
+low = 180
+medium = 420
+high = 600
+xhigh = 1800
+
+[search]
+# Profundidade: fast | low | medium | high | xhigh
+preset = "low"
+# Modo do filtro de domínios: allow (somente estes) | deny (excluir estes)
+domain_mode = "allow"
+# Pacotes de config/source_packs.toml marcados por padrão (use as chaves das seções).
+source_packs = []
+# Domínios extras, um por item. Sem o "-" do modo denylist: o app prefixa quando precisa.
+domains = []
+# Período: "" (qualquer) | hour | day | week | month | year
+recency = ""
+# Profundidade de leitura: low | medium | high
+context_size = "medium"
+# Máximo de resultados de busca: 1 a 50
+max_results = 15
+# Idioma da resposta (chave de [languages] em prompt_snippets.toml)
+language = "pt-BR"
+# Formato da resposta (chave de [formats] em prompt_snippets.toml)
+output_format = "relatorio"
+# Prioridades marcadas (chaves de [priorities] em prompt_snippets.toml)
+priorities = ["primarias", "divergencias"]
+
+[location]
+# Localização enviada à API. enabled = false deixa o campo fora do payload.
+enabled = false
+# Atalho oferecido na UI mesmo quando desligada (RF4: "Portugal – Lisboa").
+country = "PT"
+region = "Lisboa"
+city = "Lisboa"

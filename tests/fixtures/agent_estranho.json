@@ -1,0 +1,94 @@
+{
+  "id": "resp_estranho",
+  "status": "completed",
+  "output": [
+    {
+      "type": "advisor_result",
+      "comentario": "tipo de item que o parser nao conhece; deve ser ignorado"
+    },
+    "isto nem e um objeto",
+    {
+      "type": "search_results",
+      "queries": ["primeira busca", "segunda busca", "", null],
+      "results": [
+        {
+          "id": 1,
+          "url": "https://a.pt/1",
+          "title": "Sem data nenhuma",
+          "snippet": "resultado sem date e sem last_updated"
+        },
+        {
+          "id": 2,
+          "url": "https://b.pt/2",
+          "title": "Data nula",
+          "date": null,
+          "last_updated": "2026-01-02",
+          "snippet": "date explicitamente nulo"
+        },
+        {
+          "url": "https://c.pt/3",
+          "title": "Sem id",
+          "date": "2026-03-04",
+          "snippet": "resultado sem o campo id"
+        },
+        {
+          "id": 2,
+          "url": "https://b.pt/2",
+          "title": "Repetido pela URL",
+          "snippet": "deve ser descartado na deduplicacao"
+        },
+        "resultado que nem e objeto",
+        {
+          "id": 9,
+          "title": "Sem URL",
+          "snippet": "sem url nao da para citar nem listar"
+        }
+      ]
+    },
+    {
+      "type": "fetch_url_results",
+      "contents": [{"url": "https://a.pt/1", "title": "A", "snippet": "..."}]
+    },
+    {
+      "type": "search_results",
+      "queries": ["segunda busca", "terceira busca"],
+      "results": [
+        {
+          "id": 1,
+          "url": "https://d.pt/4",
+          "title": "Conflito de id com outra URL",
+          "snippet": "o primeiro id=1 deve vencer"
+        },
+        {
+          "id": 3,
+          "url": "https://e.pt/5",
+          "title": "Id novo",
+          "date": "2026-05-06",
+          "last_updated": "2026-05-07",
+          "snippet": "ok"
+        },
+        {
+          "id": "4",
+          "url": "https://f.pt/6",
+          "title": "Id como texto",
+          "snippet": "deve virar inteiro 4"
+        },
+        {
+          "id": null,
+          "url": "https://g.pt/7",
+          "title": "Id nulo",
+          "snippet": "entra no fim da numeracao"
+        }
+      ]
+    },
+    {
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        {"type": "output_text", "text": "Primeiro bloco com citacao [1].", "annotations": []},
+        {"type": "tipo_de_bloco_desconhecido", "text": "nao deve entrar na resposta"},
+        {"type": "output_text", "text": "Segundo bloco [web:3]."}
+      ]
+    }
+  ]
+}

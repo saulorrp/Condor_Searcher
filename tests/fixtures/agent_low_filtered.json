@@ -1,0 +1,254 @@
+{
+  "background": false,
+  "created_at": 1791283802,
+  "error": null,
+  "id": "resp_003d43ea-0163-4718-8cc9-ac144a75bb53",
+  "model": "openai/gpt-6-luna",
+  "object": "response",
+  "output": [
+    {
+      "queries": [
+        "Arquivo Histórico Ultramarino funcionamento consulta acervo",
+        "Arquivo Histórico Ultramarino serviços utilizador reprodução documentos",
+        "Arquivo Histórico Ultramarino sobre missão acervo"
+      ],
+      "results": [
+        {
+          "date": "2016-09-21",
+          "id": 1,
+          "last_updated": "2026-09-23",
+          "snippet": "Os pedidos de reprodução de documentos são feitos através dos serviços em linha CRAV, em\nhttps://crav.arquivos.pt/\nAs condições de reprodução e a tabela de preços encontram-se no regulamento de reprodução de documentos aplicável a todos os arquivos da DGLAB, em https://dglab.gov.pt/regulamento-de-reproducao/",
+          "source": "web",
+          "title": "Reprodução Documental | Arquivo Histórico Ultramarino - DGLAB",
+          "url": "https://ahu.dglab.gov.pt/servicos/reproducao-documental/"
+        },
+        {
+          "date": "2015-08-11",
+          "id": 2,
+          "last_updated": "2026-10-02",
+          "snippet": "Palácio da Ega, sede do AHU\nO Arquivo Histórico Ultramarino é um serviço da Direção-Geral do Livro, Arquivos e Bibliotecas, aberto ao público, responsável por cerca de 16 km de documentação textual e de imagem, relativa aos portugueses e aos povos com quem se relacionaram, entre o final do séc.\nXVI e 1974-1975\n### Serviços\n- Biblioteca\n- Lista de pesquisadores/investigadores\n- Reprodução Documental\n- Visitas\n- Sala de Leitura",
+          "source": "web",
+          "title": "DGLAB - Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/"
+        },
+        {
+          "date": "2017-02-23",
+          "id": 3,
+          "last_updated": "2026-09-30",
+          "snippet": "O acervo da biblioteca do Arquivo Histórico Ultramarino é maioritariamente composto por obras sobre a história da presença dos portugueses no mundo e das comunidades com as quais se relacionaram.\nAbrange atualmente cerca de 21 500 monografias e 720 títulos de publicações em série, algumas remontando ao século XIX, num total aproximado de 42000 volumes.\nEntre este acervo é de destacar por um lado, os Boletins Oficiais dos governos das ex-colónias portuguesas e as coleções de legislação colonial e, por outro, as teses de mestrado e doutoramento portuguesas e estrangeiras para cujas pesquisas foi usada documentação do AHU.\nGrande parte do catálogo das monografias está pesquisável em linha em https://biblioteca.dglab.gov.pt/\nAs obras da biblioteca disponíveis para consulta em sala de leitura devem ser requisitadas através dos serviços em linha CRAV.\nA coleção do AHU do Boletim Oficial de Timor, 1838-1975, está disponível na base de dados Digitarq.\nVer PT/AHU/BOTIM\nAs coleções Legislação Antiga e Legislação Novíssima do Ultramar, que cobrem o período entre 1446 e 1910, foram digitalizadas no âmbito do projeto O Governo dos Outros e podem ser consultadas no site  http://www.governodosoutros.ics.ul.pt",
+          "source": "web",
+          "title": "Biblioteca",
+          "url": "https://ahu.dglab.gov.pt/servicos/biblioteca/"
+        },
+        {
+          "date": "2020-04-07",
+          "id": 4,
+          "last_updated": "2026-03-17",
+          "snippet": "Encontram-se digitalizadas e disponíveis on-line várias imagens de documentos sobre este tema.\nEstão igualmente disponíveis catálogos e inventários cujos documentos poderão ser consultados no AHU ou acedidos por reprodução pedida através dos serviços em linha (https://digitarq.ahu.arquivos.pt/oservices) depois do atual período de confinamento.\nPara quem tiver interesse em aprofundar a pesquisa sobre esta temática, a consulta de **Fundos e Documentos** na página do AHU, em http://ahu.dglab.gov.pt/fundos-e-colecoes/, permitirá aceder a catálogos em pdf e a ligações onde estão disponíveis descrições e imagens de documentos.\nDestacamos a base de dados arquivística do AHU, em https://digitarq.ahu.arquivos.pt/, onde está disponível a descrição de grande parte da documentação do fundo de arquivo mais antigo do AHU, o Conselho Ultramarino.",
+          "source": "web",
+          "title": "PESTE E OUTRAS EPIDEMIAS: DOCUMENTOS DO ...",
+          "url": "https://ahu.dglab.gov.pt/2020/04/07/peste-e-outras-epidemias-documentos-do-arquivo-historico-ultramarino/"
+        },
+        {
+          "date": "2016-10-21",
+          "id": 5,
+          "last_updated": "2026-09-26",
+          "snippet": "Desta forma tornou-se possível tratar tecnicamente toda a documentação para que pudesse ser posta à disposição do público e divulgada a informação nela contida.",
+          "source": "web",
+          "title": "História",
+          "url": "https://ahu.dglab.gov.pt/historia/"
+        },
+        {
+          "date": "2015-08-12",
+          "id": 6,
+          "last_updated": "2026-10-05",
+          "snippet": "Calçada da Boa-Hora, nº 30\n1300-095 LISBOA\n**Tel.:** ** ** **+351 210 30 91 00**\n**E-mail** Geral:mail.ahu@ahu.dglab.gov.pt\n**Website:** http://ahu.dglab.gov.pt\n...\n**Horário de funcionamento: ** de 2ª.\na 6ª.\nfeira, das 9:30 h. às 17.00 h.\n**Horário de atendimento da Sala de Leitura:** de 2.ª a 6.ª feira, das 10:00h às 16:30h.\n**Horário da requisição presencial de documentos: ** das 10:00h às 15:30h.\n**Encerramento do AHU durante o ano de 2026: ** o Arquivo estará encerrado nos feriados de 1 de janeiro, 3 de abril, 1 de maio, 4 e 10 de junho, 5 de outubro, 1, 8 e 25 de dezembro.",
+          "source": "web",
+          "title": "Contactos",
+          "url": "https://ahu.dglab.gov.pt/contactos/"
+        },
+        {
+          "date": "2016-09-27",
+          "id": 7,
+          "last_updated": "2026-09-23",
+          "snippet": "Visitas de grupo ao Arquivo estão atualmente limitadas.\n**Contactos:** Correio eletrónico ahu@ahu.dglab.gov.pt\nTel. 10h00 – 17h00: Secretariado 210309101 Geral 210309100\nArquivo Histórico Ultramarino, Palácio da Ega, Calçada da Boa Hora, n.º 30, 1300-095 Lisboa",
+          "source": "web",
+          "title": "Visitas | Arquivo Histórico Ultramarino - DGLAB",
+          "url": "https://ahu.dglab.gov.pt/servicos/visitas/"
+        },
+        {
+          "date": "2016-09-26",
+          "id": 8,
+          "last_updated": "2026-10-05",
+          "snippet": "Para iniciar a pesquisa no AHU, veja a base de dados Digitarq em\n**https://digitarq.arquivos.pt/**\nO AHU tem instrumentos de acesso à documentação e de imagens ainda por integrar nesta base de dados.\n...\n**CU BRASIL**: Os catálogos das séries de documentos avulsos e os códices referentes ao Brasil podem igualmente ser consultados em https://www.gov.br/bn/pt-br/central-de-conteudos/projeto-resgate Neste último endereço estão igualmente disponíveis as imagens dos documentos.\n...\nA reprodução e o uso de fotografias, sem marca de água, pertencentes ao AHU, deverá ser solicitada a esta entidade através dos contactos disponíveis no site.",
+          "source": "web",
+          "title": "Fundos e coleções - Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/fundos-e-colecoes/"
+        },
+        {
+          "date": "2008-09-29",
+          "id": 9,
+          "last_updated": "2026-10-03",
+          "snippet": "Todos são arquivos públicos com sala de leitura e serviços de referência.\nA consulta aos documentos é livre e gratuita salvaguardando as exceções previstas por lei (lei de acesso aos documentos administrativos; regime geral de arquivos), e pelo estado de conservação de alguns documentos.\nSerá cobrada taxa por serviços de reprodução e certificação de acordo com a tabela aprovada da DGLAB.\nO acesso aos arquivos é livremente aberto a todos os cidadãos com mais de 16 anos de idade.\nCom idade inferior é necessário o acompanhamento por um indivíduo maior de idade.",
+          "source": "web",
+          "title": "Rede DGLAB | Arquivos DGLAB",
+          "url": "https://arquivos.dglab.gov.pt/rede-portuguesa-de-arquivos/rede-dgarq/"
+        },
+        {
+          "date": "2020-07-15",
+          "id": 10,
+          "last_updated": "2024-12-06",
+          "snippet": "Instrumentos de acesso à documentação do AHU, em pdf, disponibilizados recentemente no site do Arquivo Histórico Ultramarino, em Fundos e Coleções (http://ahu.dglab.gov.pt/fundos-e-colecoes/):\n...\nMacau: Instituto Cultural de Macau, 1997.\n2 v.\n– Instrumento de acesso à série documental então constituída sobre Macau, no fundo de arquivo do Conselho Ultramarino.\n...\nEncontra-se também disponível na base de dados arquivística digitarq a descrição da coleção de Iconografia Impressa do AHU (https://digitarq.ahu.arquivos.pt/details?id=1119616).",
+          "source": "web",
+          "title": "Instrumentos de acesso à documentação do AHU | Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/2020/07/15/instrumentos-de-acesso-a-documentacao-do-ahu/"
+        },
+        {
+          "date": null,
+          "id": 11,
+          "last_updated": "2025-09-24",
+          "snippet": "Álbuns fotográficos: acessíveis por leitura directa na sala de leitura \n(ver catalogo pág seguinte).",
+          "source": "web",
+          "title": "INVENTÁRIO DO ACERVO FOTOGRÁFICO AHU COLECÇÃO ...",
+          "url": "https://ahu.dglab.gov.pt/wp-content/uploads/sites/24/2016/09/PT-AHU-FOT.pdf"
+        },
+        {
+          "date": null,
+          "id": 12,
+          "last_updated": "2026-07-07",
+          "snippet": "3 – O período de funcionamento no Arquivo Histórico Ultramarino (AHU), no Centro Português \nde Fotografia (CPF) e nos Arquivos Distritais (AD) deve enquadrar-se nos limites acima referidos para a TT, devendo ser propostos em conformidade ao Diretor-Geral, exceto no que se refere ao CPF aos sábados, domingos e feriados, devendo igualmente ser proposto o que for entendido por necessário.",
+          "source": "web",
+          "title": "REGULAMENTO DO HORÁRIO DE TRABALHO",
+          "url": "https://dglab.gov.pt/wp-content/uploads/2016/06/Regulamento-de-hor%C3%A1rio-de-trabalho.pdf"
+        },
+        {
+          "date": null,
+          "id": 13,
+          "last_updated": "2025-04-10",
+          "snippet": "O leitor pode aceder desde que o item ou \ncolecção esteja disponível.",
+          "source": "web",
+          "title": "Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/wp-content/uploads/sites/24/2022/12/PT-AHU-FOT.pdf"
+        },
+        {
+          "date": null,
+          "id": 14,
+          "last_updated": "2025-11-03",
+          "snippet": "Palácio dos Condes da Ega que alberga o Arquivo Histórico Ultramarino, desde 1927.\n...\nEstes documentos repartem-se por duas grandes secções: \nA Primeira Secção alberga a documentação mais antiga, desde o século XVI até cerca de 1833, data da extinção do Conselho Ultramarino (1\" fase), documentação corporizada em papéis avulsos, códices, mapas, plantas, desenhos, etc.\n...\n1300 Lisboa \n...\nDe 2u a 6il feiras: 13.30 às 19.00 horas \nSábados: \n09.30 às 12.00 horas\n...\nQualquer cidadão, nacional ou estrangeiro, maior de 18 anos, devidamente identificado, tem acesso à Sala de Leitura para pesquisar.\nNo entanto, os utilizadores não portugueses e não nacionais de países de língua oficial portuguesa terão que apresentar, além dos documentos de identidade, uma credencial passada pela representação diplomática de seu país ou por qualquer instituição cultural ou científica reconhecida oficialmente.\nO utente será portador do cartão de leitor que é solicitado, logo que inicie as suas pesquisas no Arquivo Histórico Ultramarino, mediante a entrega de uma fotografia e o preenchimento de formulário.\n...\n\"A comunicação de qualquer espécie documental é, em regra, feita na Sala de Leitura.\n...\nOs documentos depositados no Arquivo Histórico Ultramarino podem ser livremente consultados logo que tenham passado sobre a data da sua produção 30 anos, exceptuando:\n- Processos individuais (civis ou militares), só podem ser consultados decorridos 50 \nanos sobre a data da morte da pessoa a que respeitem os dados ou 75 anos sobre a data do documento, em caso de dúvida ou desconhecimento da data da morte.",
+          "source": "web",
+          "title": "Macau-e-o-Oriente-Volume-I.pdf",
+          "url": "https://ahu.dglab.gov.pt/wp-content/uploads/sites/24/2016/09/Macau-e-o-Oriente-Volume-I.pdf"
+        },
+        {
+          "date": "2022-06-03",
+          "id": 15,
+          "last_updated": "2026-07-31",
+          "snippet": "O Arquivo Histórico Ultramarino foi criado em 9 de junho de 1931 e, nesse mesmo dia, mas em 1948, fundou-se o Conselho Internacional de Arquivos – ICA.",
+          "source": "web",
+          "title": "Somos Arquivo! - Arquivo Histórico Ultramarino - DGLAB",
+          "url": "https://ahu.dglab.gov.pt/2022/06/03/somos-arquivo/"
+        }
+      ],
+      "type": "search_results"
+    },
+    {
+      "contents": [
+        {
+          "snippet": "Fundos e coleções | Arquivo Histórico Ultramarino\n\n# Arquivo Histórico Ultramarino\n\nSites DGLABArquivo Histórico Ultramarino > Fundos e coleções\n\n# Fundos e coleções\n\nPara iniciar a pesquisa no AHU, veja a base de dados Digitarq em\n\n**https://digitarq.arquivos.pt/**\n\nO AHU tem instrumentos de acesso à documentação e de imagens ainda por integrar nesta base de dados.\n\nDisponibilizam-se a seguir alguns.\n\n**ÍNDICE PARCIAL DO ACERVO DO AHU**:\n\n|Informação sobre o índice|AHU_ÍndiceParcialdoAcervoInformação20200507|\n|--|--|\n|Abreviaturas constantes no índice|AHU-Abreviaturas-Índice-Parcial-Acervo.pdf|\n|Índice parcial|AHU Índice Parcial Acervol20170102|\n\n**Principais fundos documentais**:\n\n**CONSELHO ULTRAMARINO/CU** – séc. XVI-1833\n\nA descrição do fundo de arquivo do Conselho Ultramarino está disponível na base de dados em linha Digitarq, em PT/AHU/CU\n\n**CU BRASIL**: Os catálogos das séries de documentos avulsos e os códices referentes ao Brasil podem igualmente ser consultados em https://www.gov.br/bn/pt-br/central-de-conteudos/projeto-resgate Neste último endereço estão igualmente disponíveis as imagens dos documentos.\n\n- **Inventário AHU Baleias Brasil**: instrumento de acesso temático produzido na sequência da Tese de Doutoramento *A taxonomia da baleação portuguesa entre os séculos XV e XVIII: Uma história atlântica do mar, das baleias e das pessoas * da autoria de Nina Vieira, investigadora do CHAM-Centro de Humanidades da Faculdade de Ciências Sociais e Humanas da Universidade NOVA de Lisboa e atual coordenadora da linha de investigação temática “História Ambiental e o Mar” do mesmo Centro: Inventário-AHU_Baleias_Brasil\n\n**SECRETARIA DE ESTADO DA MARINHA E ULTRAMAR/SEMU** – 1833-1911\n\n|**Fundo**|**Secção**|\n|--|--|\n|Secretaria de Estado da Marinha e Ultramar/SEMU|Conselho Ultramarino PT/AHU/SEMU/CU|\n|Secretaria de Estado da Marinha e Ultramar/SEMU|Direcção-Geral do Ultramar PT/AHU/SEMU/DGUSEMU_DGU_Macau_e _Timor_InvSEMU_DGU_Cabo_Verde_ InvSEMU_DGU_Guiné_Inv|\n|Secretaria de Estado da Marinha e Ultramar/SEMU|Gabinete do Ministro PT/AHU/SEMU/GM|\n\n|Secretaria de Estado da Marinha e Ultramar/SEMU|Junta Consultiva do Ultramar PT/AHU/SEMU/JCU|\n\n**MINISTÉRIO DO ULTRAMAR/MU** – 1911-1975\n\n|**Fundo**|Ministério do Ultramar/MU|\n|--|--|\n\n|Conselhos|Conselhos-A2|\n|--|--|\n|Direcção-Geral de Economia/DGEco|AHU_MU_ DGECO_RADGEconomia|\n|Direção-Geral de Educação/DGEdu Repartição de Cultura e Missões/RCMissRepartição de Ensino/REns|DGEdu-RCMissINVENTÁRIO_Final|\n|Direção-Geral de Saúde e Assistência/DGSA|DGSA – Inventário|\n\n|Inspeção Superior de Administração Ultramarina/ ISAU|Relatórios das curadorias Relatórios de inspeções administrativas Relatórios diversos Relatórios dos governadores de distrito Relatórios dos governadores de província Relatórios dos inspectores superiores|\n|Conjunto documental produzido por Direção-Geral de Obras Públicas e Comunicações, Direção-Geral de Minas, Direção-Geral da Economia, Conselho Superior de Fomento do Ultramar, Inspeção Geral de Minas e Inspeção Superior de Administração Ultramarina, transferido em 2013 e 2014 do Arquivo do IPAD / Camões-Instituto da Cooperação e da Língua, IP, para o AHU (só estão no AHU as referências começadas por PT/IPAD)|http://arquivos.ministerioultramar.holos.pt|\n\n|Outros catálogos do MU podem ser consultados em|http://actd.iict.pt/community/actd:AHUF|\n\n**Coleções:**\n\n**FOTOGRAFIA**\n\n- Inventário PT-AHU-FOT\n- Imagens em linha http://actd.iict.pt/community/actd:FOTO.\n\nNo repositório digital Arquivo Científico Tropical  encontram-se descritas brevemente  e digitalizadas  fotografias do acervo do AHU organizadas nas  seguintes coleções: Agência Geral do Ultramar, Provas Antigas, Processos Militares, Estabelecimentos de Ensino – Direcção-Geral da Educação, Elmano Cunha e Costa, Colecção de postais ilustrados e bilhetes-postais, Arquivo Histórico Ultramarino.\n\nEstas coleções  encontram-se elencadas juntamente com outras do Instituto de Investigação Científica Tropical.  A reprodução e o uso de fotografias, sem marca de água, pertencentes ao AHU, deverá ser solicitada a esta entidade através dos contactos disponíveis no site.\n\n**COLEÇÃO PERCIVAL DE NORONHA**\n\nDoada ao AHU em  junho de 2017,  a coleção é constituída por slides relativos a Velha Goa e Pangim, mobiliário e artesanato, especialmente ourivesaria, de Goa, séc.XX. PT/AHU/PN\n\n**CARTOGRAFIA**\n\n**Cartografia impressa**\n\nPT/AHU/CARTI\n\n**Cartografia manuscrita**\n\nPT/AHU/CARTM\n\n**ICONOGRAFIA**\n\n**Iconografia impressa**\n\nPT/AHU/ICONI\n\n**Iconografia manuscrita**\n\nPT/AHU/ICONM\n\nÚltima Actualização: 3 de Agosto de 2026",
+          "title": "Fundos e coleções - Arquivo Histórico Ultramarino",
+          "url": "https://ahu.dglab.gov.pt/fundos-e-colecoes/"
+        }
+      ],
+      "type": "fetch_url_results"
+    },
+    {
+      "content": [
+        {
+          "annotations": [],
+          "text": "O **Arquivo Histórico Ultramarino (AHU)** é um arquivo público português da Direção-Geral do Livro, dos Arquivos e das Bibliotecas (DGLAB). Reúne cerca de 16 km de documentos textuais e de imagem relacionados com a presença portuguesa no mundo e com os povos com quem Portugal se relacionou, do final do século XVI até 1974–1975. [web:2]\n\n**Na prática, funciona assim:**\n\n1. **Começa-se pela pesquisa do acervo.** A porta de entrada recomendada é a base de dados **Digitarq**, onde se pode procurar descrições de documentos. Há também catálogos e inventários que ainda não foram integrados nessa base, disponíveis na página de fundos e coleções do AHU. Para documentos sobre o Brasil, por exemplo, o site do Projeto Resgate disponibiliza catálogos e imagens de parte do acervo. [web:8]\n\n2. **Consulta-se o que estiver disponível online ou na Sala de Leitura.** Nem todo o material está digitalizado; quando a descrição ou imagem não está online, pode ser necessário consultar o documento presencialmente. A consulta presencial é gratuita, mas está sujeita às regras de acesso, à legislação e ao estado de conservação dos documentos. [web:8][web:9]\n\n3. **Para pedir documentos ou cópias, usam-se os serviços online.** As obras da biblioteca destinadas à consulta em sala são requisitadas pelo sistema CRAV. Pedidos de reprodução documental também são feitos pelo CRAV, e podem ter custos segundo o regulamento e a tabela de preços da DGLAB. [web:3][web:1]\n\n4. **A consulta presencial tem horários próprios.** A Sala de Leitura funciona de segunda a sexta, das **10h às 16h30**; a requisição presencial de documentos é feita das **10h às 15h30**. O AHU fica no Palácio da Ega, na Calçada da Boa-Hora, n.º 30, em Lisboa. [web:6]\n\nEm resumo: pesquisa-se primeiro nos catálogos digitais, identifica-se a referência do documento e, conforme sua disponibilidade, consulta-se online, pede-se pelo CRAV ou visita-se a Sala de Leitura.",
+          "type": "output_text"
+        }
+      ],
+      "id": "msg_55809291-1940-4e84-b6b5-a31247a25e6f",
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "previous_response_id": null,
+  "status": "completed",
+  "store": true,
+  "usage": {
+    "cost": {
+      "cache_creation_cost": 0.00055,
+      "cache_read_cost": 7e-05,
+      "currency": "USD",
+      "input_cost": 0.0,
+      "output_cost": 0.00032,
+      "tool_calls_cost": 0.0015,
+      "total_cost": 0.00244,
+      "tool_calls_cost_details": {
+        "fetch_url": 0.0005,
+        "search_web": 0.001
+      }
+    },
+    "input_tokens": 11476,
+    "input_tokens_details": {
+      "cache_creation_input_tokens": 4406,
+      "cache_read_input_tokens": 7061,
+      "cached_tokens": 7061
+    },
+    "output_tokens": 640,
+    "tool_calls_details": {
+      "fetch_url": {
+        "invocation": 1,
+        "cost_usd": 0.0005
+      },
+      "search_web": {
+        "invocation": 1,
+        "cost_usd": 0.001
+      }
+    },
+    "total_tokens": 12116,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "completed_at": 1791283802,
+  "frequency_penalty": 0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "metadata": {},
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "prompt_cache_key": null,
+  "reasoning": null,
+  "safety_identifier": null,
+  "service_tier": "default",
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [
+    {
+      "filters": {
+        "search_domain_filter": [
+          "dglab.gov.pt"
+        ]
+      },
+      "type": "web_search"
+    },
+    {
+      "type": "fetch_url"
+    }
+  ],
+  "top_logprobs": 0,
+  "top_p": 1,
+  "truncation": "",
+  "user": null
+}

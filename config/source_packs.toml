@@ -1,0 +1,53 @@
+# Pacotes de fontes do Condor Searcher.
+# Cada pacote vira entradas em filters.search_domain_filter (limite da API: 20 domínios no total por busca).
+# Use domínio raiz ("ulisboa.pt" cobre subdomínios) ou URL específica.
+# Domínios são sugestões iniciais: revise e edite à vontade.
+
+[academico]
+label = "Acadêmico (geral)"
+description = "Periódicos, repositórios e bases de teses."
+domains = [
+  "scielo.org", "scielo.br", "jstor.org", "openedition.org", "persee.fr",
+  "dialnet.unirioja.es", "redalyc.org", "doaj.org", "semanticscholar.org",
+  "researchgate.net", "academia.edu", "rcaap.pt", "bdtd.ibict.br",
+  "periodicos.capes.gov.br",
+]
+
+[linguistica_historica]
+label = "Linguística histórica e arquivos"
+description = "Corpora, arquivos e centros de pesquisa PT/BR."
+domains = [
+  "clul.ulisboa.pt", "letras.ulisboa.pt", "dglab.gov.pt", "digitarq.arquivos.pt",
+  "arquivos.pt", "bnportugal.gov.pt", "purl.pt", "bndigital.bn.gov.br",
+  "repositorio.ul.pt", "repositorio.ufsc.br",
+]
+
+[portugal_oficial]
+label = "Portugal – fontes oficiais"
+description = "Governo, imigração, saúde, finanças, universidade."
+domains = [
+  "gov.pt", "aima.gov.pt", "diariodarepublica.pt", "sns.gov.pt", "sns24.gov.pt",
+  "portaldasfinancas.gov.pt", "seg-social.pt", "ulisboa.pt", "carris.pt", "metrolisboa.pt",
+  "navegante.pt",
+]
+
+[brasil_oficial]
+label = "Brasil – fontes oficiais"
+description = "Governo federal, CAPES, UFSC."
+domains = ["gov.br", "capes.gov.br", "ufsc.br"]
+
+[foruns]
+label = "Fóruns e comunidades"
+description = "Relatos de quem vive a situação (verifique sempre)."
+domains = ["reddit.com", "stackexchange.com", "internations.org", "expatica.com", "tripadvisor.com"]
+
+[noticias_pt]
+label = "Imprensa portuguesa"
+description = "Jornais e TV de Portugal."
+domains = ["publico.pt", "observador.pt", "expresso.pt", "rtp.pt", "dn.pt", "jn.pt", "sicnoticias.pt", "eco.sapo.pt"]
+
+[sem_ruido]
+label = "Excluir ruído (denylist)"
+description = "Usado no modo 'Excluir estes'."
+mode = "deny"
+domains = ["pinterest.com", "quora.com", "facebook.com", "instagram.com", "tiktok.com"]

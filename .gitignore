@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+*.db
+output/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Binários do release: vão como anexo da GitHub Release, não no repositório
+release/

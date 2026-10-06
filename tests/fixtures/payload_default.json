@@ -1,0 +1,11 @@
+{
+  "preset": "low",
+  "input": "<briefing>\nIdioma da resposta: português do Brasil.\nFormato: relatório estruturado com seções ## e conclusão curta.\nPrioridades:\n- Prefira fontes primárias e oficiais; cite a fonte de cada afirmação.\n- Quando as fontes divergirem, diga explicitamente onde e por quê.\n</briefing>\n\n<pergunta>\nComo funciona o Arquivo Historico Ultramarino?\n</pergunta>",
+  "tools": [
+    {
+      "type": "web_search",
+      "search_context_size": "medium",
+      "max_results": 15
+    }
+  ]
+}
