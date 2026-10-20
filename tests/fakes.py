@@ -1,4 +1,6 @@
-"""SDK falso para os testes de interface — nenhuma chamada de rede.
+"""SDK falso para os testes — nenhuma chamada de rede.
+
+Usado pela interface (F7/F10) e pela linha de comando (F11).
 
 Fala os dois modos: resposta de uma vez e `stream=True`, este último devolvendo os eventos que o
 `services/client.py` escuta (`response.output_text.delta`, `response.reasoning.search_results`,

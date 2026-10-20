@@ -20,7 +20,7 @@ from condor.ui.main_window import MainWindow
 from condor.ui.result_tab import ResultTab, footer_text, strip_front_matter, tab_title
 from condor.ui.search_panel import SearchPanel
 from condor.ui.worker import SearchContext, execute_search
-from tests.ui.fakes import SdkFalso
+from tests.fakes import SdkFalso
 
 PERGUNTA = "Qual é a capital de Portugal?"
 

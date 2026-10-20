@@ -53,6 +53,20 @@ def test_a_ui_nao_conhece_o_sdk() -> None:
         assert "perplexity" not in _imports(arquivo), f"{arquivo.name} importa o SDK."
 
 
+@pytest.mark.parametrize("arquivo", sorted((SRC / "cli").glob("*.py")), ids=lambda p: p.name)
+def test_cli_nao_importa_qt(arquivo: Path) -> None:
+    """A linha de comando (F11) tem de rodar em terminal puro, sessão remota ou servidor."""
+    assert "PySide6" not in _imports(arquivo), f"{arquivo.name} importa Qt."
+    assert "condor.ui" not in arquivo.read_text(encoding="utf-8"), f"{arquivo.name} depende da UI."
+
+
+def test_fluxo_da_busca_nao_depende_de_qt() -> None:
+    """`execute_search` é compartilhado por UI e CLI: se voltar para `ui/`, a CLI quebra."""
+    runner = SRC / "services" / "search_runner.py"
+    assert runner.is_file()
+    assert "PySide6" not in _imports(runner)
+
+
 def test_services_nao_importa_ui() -> None:
     for arquivo in (SRC / "services").glob("*.py"):
         assert "condor.ui" not in arquivo.read_text(encoding="utf-8")

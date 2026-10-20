@@ -95,6 +95,13 @@ Na primeira execução, se não houver chave, o diálogo abre sozinho antes da j
 Ordem de leitura da chave: variável de ambiente do sistema já definida → `.env` da pasta do app.
 Se a chave vier de variável de sistema, o diálogo avisa que o `.env` não terá efeito.
 
+**RF9 – Linha de comando (`condor-cli`).** Tudo o que a janela faz, sem Qt, para uso por script ou agente:
+- `buscar` (todas as opções do RF4 como flags), `historico`, `ver <id>`, `gastos`;
+- `--so-prompt` mostra o payload sem chamar a API; `--json` devolve objeto estável para consumo por máquina;
+- **teto diário de gastos** (`[limits].daily_usd`), porque quem dispara pode não estar por perto;
+- códigos de saída distinguem uso, configuração, API, teto, chave e "não encontrado".
+O fluxo de uma busca vive em `services/search_runner.py` e é o mesmo nos dois caminhos.
+
 **RF8 – Execução com duplo clique (`run.bat`).** Na raiz do projeto:
 - 1ª execução: localiza Python ≥ 3.11 (`py -3` ou `python`), cria `.venv`, instala o app (`pip install -e .`) e abre;
 - execuções seguintes: só abre, via `pythonw.exe` (sem janela preta de console);
@@ -162,8 +169,14 @@ condor-searcher/
 │  │  ├─ errors.py           # CondorError, AuthError, NetworkError, RateLimitError, EmptyResponseError
 │  │  ├─ client.py           # único import do SDK; retries/timeouts
 │  │  ├─ storage.py          # grava .md/.json, SQLite do histórico
+│  │  ├─ search_runner.py    # o fluxo de uma busca (§7), compartilhado por ui/ e cli/
 │  │  ├─ settings_store.py   # lembra última configuração (JSON na pasta de dados)
 │  │  └─ secrets.py          # lê/grava/remove a chave no .env; mascara para exibição (RF7)
+│  ├─ cli/                   # linha de comando (RF9), sem Qt
+│  │  ├─ main.py             # parser e entrada do `condor-cli`
+│  │  ├─ app.py              # os comandos e os códigos de saída
+│  │  ├─ options.py          # flags -> SearchOptions
+│  │  └─ output.py           # texto para humano, JSON para agente
 │  └─ ui/
 │     ├─ main_window.py      # janela, abas, menu, status bar
 │     ├─ search_panel.py     # prompt + botão + painel de opções

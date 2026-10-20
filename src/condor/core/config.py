@@ -72,6 +72,18 @@ class Snippets:
 
 
 @dataclass(frozen=True)
+class Limits:
+    """Freios de uso. Hoje só o teto diário da linha de comando (F11)."""
+
+    #: Teto de gasto por dia, em US$. `0` desliga.
+    daily_usd: float = 0.0
+
+    @property
+    def enabled(self) -> bool:
+        return self.daily_usd > 0
+
+
+@dataclass(frozen=True)
 class Defaults:
     """Conteúdo de `config/defaults.toml`."""
 
@@ -80,6 +92,7 @@ class Defaults:
     options: SearchOptions
     source_packs: tuple[str, ...]  # pacotes marcados por padrão
     location_shortcut: LocationOpt  # oferecido na UI mesmo com a localização desligada
+    limits: Limits = Limits()
 
 
 # --------------------------------------------------------------------------- leitura
@@ -145,6 +158,7 @@ def load_defaults(path: Path) -> Defaults:
         options=options,
         source_packs=_str_list(search, "source_packs", path),
         location_shortcut=_location(location),
+        limits=_limits(data.get("limits"), path),
     )
 
 
@@ -239,6 +253,21 @@ def _str_list(table: dict[str, Any], key: str, path: Path) -> tuple[str, ...]:
     if isinstance(value, str) or not isinstance(value, list):
         raise ValueError(f"{path.name}: {key} deve ser uma lista de textos (recebi {value!r}).")
     return tuple(str(item).strip() for item in value if str(item).strip())
+
+
+def _limits(table: Any, path: Path) -> Limits:
+    """Seção `[limits]`, opcional: sem ela, não há teto."""
+    if table is None:
+        return Limits()
+    if not isinstance(table, dict):
+        raise ValueError(f"{path.name}: [limits] deve ser uma seção.")
+    valor = table.get("daily_usd", 0)
+    if isinstance(valor, bool) or not isinstance(valor, (int, float)) or valor < 0:
+        raise ValueError(
+            f"{path.name}: [limits].daily_usd deve ser um número de dólares maior ou igual a 0 "
+            f"(recebi {valor!r})."
+        )
+    return Limits(daily_usd=float(valor))
 
 
 def _location(table: dict[str, Any]) -> LocationOpt:

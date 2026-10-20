@@ -95,3 +95,21 @@ modo background para `high`/`xhigh`; tema escuro; empacotar com PyInstaller
 (`--windowed`, usar `docs/icon/icon.ico` — ver pendência do .ico no PROGRESS);
 exportar para PDF/DOCX; importar os prompts dos scripts antigos como "modelos de busca";
 atalho na área de trabalho para o `run.bat`; guardar a chave no Gerenciador de Credenciais do Windows (`keyring`) em vez do `.env`.
+
+## F11 — Linha de comando (busca sem interface) · `DONE`
+**Objetivo:** permitir que um agente (Claude Code) rode buscas e leia os resultados sem ninguém na frente
+do computador — e sem Qt, para funcionar em sessão remota, servidor ou terminal puro.
+**Arquivos:** TECHSPEC RF1–RF5 (reuso), `services/*` e `core/*` (assinaturas), `ui/worker.py` (mover o fluxo).
+**Tarefas**
+1. Mover `SearchContext`/`execute_search` de `ui/worker.py` para `services/search_runner.py` (sem Qt).
+   O worker passa a importar de lá; o fluxo do §7 fica disponível para UI e CLI.
+2. `services/storage.py`: `spent_since(datetime) -> float` para o teto de gastos.
+3. `config/defaults.toml`: seção `[limits]` com `daily_usd`; `core/config.py` carrega em `Defaults.limits`.
+4. `src/condor/cli/`: `buscar`, `historico`, `ver`, `gastos`, `prompt` (só mostra o payload, não chama a API).
+   Todas as opções do RF4 como flags; `--json` para consumo por agente; mensagens em português.
+5. **Teto de gastos**: antes de buscar, soma o custo do dia e recusa se passar do limite (`--sem-limite` libera).
+6. Entry point `condor-cli` no pyproject; documentar os comandos no AGENTS.md (é o que um agente lê primeiro).
+**Aceite:** `condor-cli buscar --so-prompt` não chama a API · `--json` devolve objeto estável com caminho do
+.md, custo e fontes · teto de gastos bloqueia e explica · nenhum arquivo de `cli/` importa Qt (teste) ·
+a chave nunca aparece na saída.
+**Atenção:** quem roda `buscar` de verdade gasta dinheiro. Os testes usam SDK falso, como sempre.

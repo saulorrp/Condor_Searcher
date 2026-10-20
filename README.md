@@ -44,6 +44,22 @@ python -m condor        # ou: condor
 
 No Windows, também dá para dar duplo clique em `run.bat`.
 
+## Linha de comando
+
+Além da janela, há o `condor-cli`, que faz buscas sem abrir interface — útil para scripts e para
+um agente rodar sem ninguém na frente do computador:
+
+```bash
+condor-cli buscar "sua pergunta" --json        # busca real (custa dinheiro)
+condor-cli buscar "sua pergunta" --so-prompt   # mostra o que seria enviado, sem gastar
+condor-cli historico --limite 10
+condor-cli ver 12 > relatorio.md
+condor-cli gastos                              # quanto já se gastou hoje e qual o teto
+```
+
+Há um teto diário de gastos em `config/defaults.toml` (`[limits].daily_usd`, padrão US$ 1,00).
+`condor-cli --help` lista todas as opções.
+
 ## Desenvolvimento
 
 ```bash

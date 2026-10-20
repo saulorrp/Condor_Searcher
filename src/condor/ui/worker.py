@@ -1,72 +1,23 @@
-"""A busca fora da thread da interface (TECHSPEC §7, RF1: "A UI nunca congela").
+"""A busca fora da thread da interface (TECHSPEC RF1: "A UI nunca congela").
 
-`execute_search()` é o fluxo do §7 em uma função sem Qt nenhum — é ela que os testes exercitam.
-`SearchWorker` só a embala num `QRunnable` e converte o resultado em sinais.
+O fluxo em si mora em `services/search_runner.py`, sem Qt nenhum — aqui ele só é embalado num
+`QRunnable` e convertido em sinais. `SearchContext` e `execute_search` continuam sendo importáveis
+deste módulo por conveniência de quem já os usava.
 """
 
 from __future__ import annotations
 
 import logging
-from collections.abc import Callable, Mapping
-from dataclasses import dataclass
-from datetime import datetime
 
 from PySide6.QtCore import QObject, QRunnable, Signal, Slot
 
-from condor.core.config import Snippets
-from condor.core.markdown_report import render
-from condor.core.models import SearchOptions, SearchRecord
-from condor.core.prompt_builder import build
-from condor.core.response_parser import parse
-from condor.services.client import AgentClient, StreamSink
+from condor.core.models import SearchOptions
 from condor.services.errors import AuthError, CancelledError, CondorError
-from condor.services.storage import Storage
+from condor.services.search_runner import SearchContext, execute_search
 
 logger = logging.getLogger(__name__)
 
-Progress = Callable[[str], None]
-
-
-@dataclass(frozen=True)
-class SearchContext:
-    """Tudo o que uma busca precisa. Injetado para os testes trocarem o cliente por um falso."""
-
-    client: AgentClient
-    storage: Storage
-    snippets: Snippets
-    timeouts: Mapping[str, int]
-
-
-def execute_search(
-    ctx: SearchContext,
-    prompt: str,
-    options: SearchOptions,
-    progress: Progress | None = None,
-    sink: StreamSink | None = None,
-) -> SearchRecord:
-    """Monta, envia, interpreta, renderiza e grava — o fluxo do TECHSPEC §7.
-
-    Levanta `ValueError` (validação das opções) ou `CondorError` (API, disco). Nada de Qt aqui.
-    """
-    aviso = progress or (lambda _: None)
-
-    aviso("Montando a busca…")
-    req = build(prompt, options, ctx.snippets, ctx.timeouts)
-
-    aviso(f"Consultando a Perplexity (preset {options.preset})…")
-    raw = ctx.client.run(req, sink)
-
-    aviso("Interpretando a resposta…")
-    result = parse(raw)
-
-    aviso("Gerando o relatório…")
-    criado_em = datetime.now()
-    md = render(result, prompt, options, req.briefing, criado_em)
-
-    aviso("Salvando…")
-    record = ctx.storage.save(result, md, prompt, options, created_at=criado_em)
-    logger.info("Busca concluída: %s", record.md_path.name)
-    return record
+__all__ = ["SearchContext", "SearchWorker", "SignalSink", "WorkerSignals", "execute_search"]
 
 
 class WorkerSignals(QObject):

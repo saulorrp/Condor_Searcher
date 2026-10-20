@@ -362,3 +362,34 @@ Formato: `## AAAA-MM-DD · Fase · agente` + 3–6 bullets (feito, decisões, pe
 - `find_project_root` (`__main__.py`): no executável congelado a raiz é a pasta do `.exe`.
 - Dependência nova (só build): `pyinstaller` -> extra `[build]` no pyproject, para gerar o executável.
 - Smoke test: o .exe abre e permanece rodando; build não chama a API.
+
+## 2026-10-20 · F11 Linha de comando (busca sem interface) · Claude
+- Pedido do usuário: poder mandar prompts pelo app do Claude e ter o Claude Code gerando buscas e lendo os
+  resultados sem ele presente. O que faltava no projeto era um caminho **sem Qt** — a janela não serve a
+  sessão remota nem a terminal puro. Registrei como fase F11 no PLAN e implementei.
+- `services/search_runner.py`: `SearchContext` e `execute_search` saíram de `ui/worker.py` (que importava Qt
+  no topo e por isso era inutilizável pela CLI). O worker passou a importar de lá; nenhum teste mudou de
+  comportamento. Agora janela e linha de comando percorrem **o mesmo** fluxo do §7.
+- `src/condor/cli/`: `main.py` (parser), `app.py` (comandos e códigos de saída), `options.py` (flags →
+  `SearchOptions`), `output.py` (texto para humano, JSON para agente). Entry point `condor-cli` no pyproject.
+- Comandos: `buscar` (todas as opções do RF4), `historico`, `ver <id>`, `gastos`. `--so-prompt` mostra o
+  payload **sem chamar a API** — é o jeito grátis de conferir antes de gastar.
+- Decisão: **teto diário de gastos** (`[limits].daily_usd` em `defaults.toml`, padrão US$ 1,00), com
+  `Storage.spent_since()` somando o custo do dia. Não estava no pedido, mas um agente disparando buscas sem
+  ninguém por perto precisa de um freio; estourado, `buscar` recusa com código 4 e explica. `--sem-limite`
+  libera. A janela não aplica o teto: lá o usuário vê o custo de cada busca antes de repetir.
+- Decisão: `--json` é **contrato**, com códigos de saída que distinguem uso (1), configuração (2), API (3),
+  teto (4), chave (5) e id inexistente (6) — é o que permite ao agente decidir sozinho se repete, corrige ou
+  desiste. Acrescentar campo ao JSON é seguro; renomear quebra quem já depende.
+- Documentação: seção nova no **AGENTS.md** (é o primeiro arquivo que um agente lê, então os comandos, o
+  aviso de custo e os códigos de saída ficam lá), **RF9** no TECHSPEC, árvore do §7 atualizada e uma seção no
+  README. `tests/ui/fakes.py` virou `tests/fakes.py`, compartilhado por UI e CLI.
+- Testes: 45 novos (526 no total + 1 pulado, `ruff` limpo). Cobrem o mapeamento de todas as flags, datas e
+  localização inválidas, pacote inexistente, o contrato do JSON, `--so-prompt` não chamando a API, chave
+  ausente, falha de API, as cinco situações do teto (bloqueia, libera abaixo, ignora gasto de ontem,
+  `--sem-limite`, teto zero) e os comandos de histórico/ver/gastos. Dois testes novos de arquitetura garantem
+  que `cli/` nunca importa Qt e que o fluxo da busca não volta para dentro da UI.
+- Conferido contra o projeto real, **sem chamar a API**: `--so-prompt`, `gastos` e `historico` (que listou as
+  4 buscas de verdade já feitas pelo usuário).
+- **PENDENTE (usuário):** rodar uma `condor-cli buscar` de verdade para confirmar ponta a ponta — e decidir
+  onde o Claude Code vai rodar para operar sem você (ver resumo da sessão).

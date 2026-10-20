@@ -43,3 +43,10 @@ enabled = false
 country = "PT"
 region = "Lisboa"
 city = "Lisboa"
+
+[limits]
+# Teto de gasto por dia, em dólares, usado pela linha de comando (condor-cli).
+# Existe porque um agente pode disparar buscas sem ninguém por perto. A interface gráfica não
+# aplica este teto: lá você vê o custo de cada busca antes de repetir.
+# 0 desliga o teto.
+daily_usd = 1.0

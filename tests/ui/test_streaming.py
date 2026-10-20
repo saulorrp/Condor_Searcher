@@ -1,6 +1,6 @@
 """Testes do streaming (F10): cliente, worker e a aba temporária.
 
-Nenhuma chamada de rede: o SDK falso de `tests/ui/fakes.py` emite os mesmos eventos que o SDK
+Nenhuma chamada de rede: o SDK falso de `tests/fakes.py` emite os mesmos eventos que o SDK
 real (`response.output_text.delta`, `response.reasoning.search_results`, `response.completed`).
 """
 
@@ -17,7 +17,7 @@ from condor.services.errors import AuthError, CancelledError, NetworkError
 from condor.ui.main_window import MainWindow
 from condor.ui.result_tab import ResultTab, StreamingTab
 from condor.ui.worker import SearchContext, execute_search
-from tests.ui.fakes import FakeEvent, FakeResponse, SdkFalso, stream_events
+from tests.fakes import FakeEvent, FakeResponse, SdkFalso, stream_events
 
 ROOT = Path(__file__).resolve().parents[2]
 PERGUNTA = "Qual é a capital de Portugal?"
@@ -131,7 +131,7 @@ def test_retry_avisa_o_sink_para_apagar_o_texto(raw_fast, req) -> None:
             self.chamadas.append(kwargs)
             if len(self.chamadas) == 1:
                 raise APITimeoutError(request=__import__("httpx").Request("POST", "https://x"))
-            from tests.ui.fakes import FakeStream
+            from tests.fakes import FakeStream
 
             return FakeStream(self, stream_events(self.raw))
 

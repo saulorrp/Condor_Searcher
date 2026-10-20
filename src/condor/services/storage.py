@@ -131,6 +131,23 @@ class Storage:
             ).fetchall()
         return tuple(_record(linha) for linha in linhas)
 
+    def spent_since(self, inicio: datetime) -> float:
+        """Soma o custo das buscas feitas a partir de `inicio` (US$).
+
+        Serve ao teto de gastos da linha de comando (F11): um agente buscando sem ninguém por
+        perto precisa de um freio. Buscas sem custo informado contam como zero — é o que o banco
+        sabe, e inventar estimativa aqui seria pior.
+        """
+        if not self.db_path.exists():
+            return 0.0
+        with self._db() as conn:
+            linha = conn.execute(
+                "SELECT COALESCE(SUM(cost_usd), 0) AS total FROM searches "
+                "WHERE datetime(created_at) >= datetime(?)",
+                (inicio.isoformat(timespec="seconds"),),
+            ).fetchone()
+        return float(linha["total"] or 0.0)
+
     def get(self, record_id: int) -> SearchRecord | None:
         if not self.db_path.exists():
             return None
